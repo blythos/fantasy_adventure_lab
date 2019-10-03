@@ -15,15 +15,16 @@ public class Wizard extends PlayerCharacter implements IAttack {
 
     public void attack(Monster monster) {
         if(this.getWill() > monster.getCon()){
-            monster.takeDamage(this.skill.getDamage());
+            monster.takeDamage(skill.getDamage());
+            this.useSkill();
         }
     }
 
-    public void useSkill(Monster monster){
-        int base = fireBolt.useSkill();
-        int mpcost = fireBolt.getMpCost();
-        if (this.getMp() >= mpcost){
-
+    public void useSkill(){
+        int mpCost = fireBolt.getMpCost();
+        if (this.getMp() >= mpCost){
+           int newMP = this.getMp() - fireBolt.getMpCost();
+           this.setMp(newMP);
         }
 
     }
