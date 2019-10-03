@@ -1,6 +1,11 @@
-package Player;
+package player;
 
 //import java.util.ArrayList;
+
+import behaviours.IUse;
+import room.Room;
+
+import java.util.ArrayList;
 
 public abstract class PlayerCharacter {
 
@@ -13,7 +18,7 @@ public abstract class PlayerCharacter {
     private int Will;
     private int Wis;
     private int Cha;
-//    private ArrayList<IItems> inventory;
+    private ArrayList<IUse> inventory;
 //    Weapon weapon;
 //    Armour armour;
 
@@ -68,5 +73,9 @@ public abstract class PlayerCharacter {
 
     public void takeDamage() {
         this.hp -= 20; //TODO: change to weapon damage
+    }
+
+    public void open(Room room){
+
     }
 }

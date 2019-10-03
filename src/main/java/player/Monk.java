@@ -1,6 +1,8 @@
-package Player;
+package player;
 
-public class Monk extends PlayerCharacter implements IAttack{
+import behaviours.IAttack;
+
+public class Monk extends PlayerCharacter implements IAttack {
 
     public Monk(String name, int hp, int mp, int str, int dex, int con, int will, int wis, int cha) {
         super(name, hp, mp, str, dex, con, will, wis, cha);

@@ -1,4 +1,6 @@
-package Player;
+package behaviours;
+
+import player.Monster;
 
 public interface IAttack {
 
