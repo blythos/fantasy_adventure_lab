@@ -1,6 +1,5 @@
 package playerTests;
 
-import Player.Barbarian;
 import Player.Knight;
 import Player.Monster;
 import org.junit.Before;
