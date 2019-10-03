@@ -1,8 +1,9 @@
 package items;
 
+import behaviours.IUse;
 import skills.Skill;
 
-public class Item {
+public class Item implements IUse {
 
     private String name;
     private Skill skill;

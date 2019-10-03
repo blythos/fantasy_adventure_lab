@@ -1,8 +1,9 @@
 package weapons;
 
+import behaviours.IUse;
 import skills.Skill;
 
-public class Weapon {
+public class Weapon implements IUse {
 
     private String name;
     private int atk;

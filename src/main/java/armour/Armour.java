@@ -1,8 +1,9 @@
 package armour;
 
+import behaviours.IUse;
 import skills.Skill;
 
-public class Armour {
+public class Armour implements IUse {
 
     private String name;
     private int def;

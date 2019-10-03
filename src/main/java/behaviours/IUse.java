@@ -1,6 +1,8 @@
 package behaviours;
 
+import skills.Skill;
+
 public interface IUse {
 
-    void getSkills();
+    Skill getSkill();
 }
