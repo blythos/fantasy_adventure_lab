@@ -10,7 +10,7 @@ public class Knight extends PlayerCharacter implements IAttack {
 
     public void attack(Monster monster) {
         if(this.getStr() > monster.getCon()){
-            monster.takeDamage();
+            monster.takeDamage(damage);
         }
     }
 

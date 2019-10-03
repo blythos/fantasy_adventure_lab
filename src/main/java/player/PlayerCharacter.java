@@ -5,6 +5,8 @@ package player;
 import armour.Armour;
 import behaviours.IUse;
 import room.Room;
+import skills.FireBolt;
+import skills.Skill;
 import weapons.Weapon;
 
 import java.util.ArrayList;
@@ -23,6 +25,7 @@ public abstract class PlayerCharacter {
     private ArrayList<IUse> inventory;
     Weapon weapon;
     Armour armour;
+    FireBolt fireBolt;
 
     public PlayerCharacter(String name, int hp, int mp, int str, int dex, int con, int will, int wis, int cha){
         this.name = name;
@@ -35,14 +38,23 @@ public abstract class PlayerCharacter {
         this.Wis = wis;
         this.Cha = cha;
         this.inventory = new ArrayList<IUse>();
+//        this.skill = new FireBolt("FireBolt");
     }
 
     public int getHp() {
         return hp;
     }
 
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
     public int getMp() {
         return mp;
+    }
+
+    public void setMp(int mp) {
+        this.mp = mp;
     }
 
     public int getStr() {
@@ -84,4 +96,5 @@ public abstract class PlayerCharacter {
     public ArrayList<IUse> seeInventory(){
         return inventory;
     }
+
 }

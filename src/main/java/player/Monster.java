@@ -1,5 +1,7 @@
 package player;
 
+import skills.Skill;
+
 public class Monster {
     private String name;
     private int hp;
@@ -28,7 +30,7 @@ public class Monster {
         }
     }
 
-    public void takeDamage() {
-        this.hp -= 20; //TODO: change to weapon damage
+    public void takeDamage(int damage) {
+        this.hp -= damage; //TODO: change to weapon damage
     }
 }
