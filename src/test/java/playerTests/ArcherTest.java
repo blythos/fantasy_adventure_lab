@@ -1,7 +1,7 @@
 package playerTests;
 
-import Player.Archer;
-import Player.Monster;
+import player.Archer;
+import player.Monster;
 import org.junit.Before;
 import org.junit.Test;
 

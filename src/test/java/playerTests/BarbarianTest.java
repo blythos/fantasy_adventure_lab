@@ -1,7 +1,7 @@
 package playerTests;
 
-import Player.Barbarian;
-import Player.Monster;
+import player.Barbarian;
+import player.Monster;
 import org.junit.Before;
 import org.junit.Test;
 

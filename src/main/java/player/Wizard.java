@@ -1,4 +1,6 @@
-package Player;
+package player;
+
+import behaviours.IAttack;
 
 public class Wizard extends PlayerCharacter implements IAttack {
 

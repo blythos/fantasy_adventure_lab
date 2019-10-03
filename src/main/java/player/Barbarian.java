@@ -1,6 +1,8 @@
-package Player;
+package player;
 
-public class Barbarian extends PlayerCharacter implements IAttack{
+import behaviours.IAttack;
+
+public class Barbarian extends PlayerCharacter implements IAttack {
 
     private String skill;
 

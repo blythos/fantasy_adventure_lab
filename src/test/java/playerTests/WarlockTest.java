@@ -1,7 +1,7 @@
 package playerTests;
 
-import Player.Monster;
-import Player.Warlock;
+import player.Monster;
+import player.Warlock;
 import org.junit.Before;
 import org.junit.Test;
 
