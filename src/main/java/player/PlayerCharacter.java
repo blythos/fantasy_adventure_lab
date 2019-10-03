@@ -2,8 +2,10 @@ package player;
 
 //import java.util.ArrayList;
 
+import armour.Armour;
 import behaviours.IUse;
 import room.Room;
+import weapons.Weapon;
 
 import java.util.ArrayList;
 
@@ -19,8 +21,8 @@ public abstract class PlayerCharacter {
     private int Wis;
     private int Cha;
     private ArrayList<IUse> inventory;
-//    Weapon weapon;
-//    Armour armour;
+    Weapon weapon;
+    Armour armour;
 
     public PlayerCharacter(String name, int hp, int mp, int str, int dex, int con, int will, int wis, int cha){
         this.name = name;
@@ -32,7 +34,7 @@ public abstract class PlayerCharacter {
         this.Will = will;
         this.Wis = wis;
         this.Cha = cha;
-//        this.inventory = new ArrayList<IItems>();
+        this.inventory = new ArrayList<IUse>();
     }
 
     public int getHp() {
@@ -77,5 +79,9 @@ public abstract class PlayerCharacter {
 
     public void open(Room room){
 
+    }
+
+    public ArrayList<IUse> seeInventory(){
+        return inventory;
     }
 }
